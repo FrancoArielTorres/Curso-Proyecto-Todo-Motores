@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./estilo.css/formulario.css" />
+    <link rel="stylesheet" href="./estilo.css/cotiacion.css" />
     <title>Formulario de contacto</title>
   </head>
   <body class="fondo" style="background-image: url(./fotos/fondon.jpg)" ;>
@@ -37,14 +37,27 @@
 <div>
  <form class="form">
  <section class="form-register"> 
- <h2>Formulario de contacto:</h2>
+ <h2>Formulario de Cotizacion:</h2>
                
- <input class="controls" type="text" required maxlength="50" name="Nombre" id="Nombre" placeholder="Nombre">     
+ <input class="controls" type="text" required maxlength="50" name="Nombre" id="Nombre" placeholder="Nombre">   
+ <input class="controls" type="text" required maxlength="50" name="Apellido" id="Apellido" placeholder="Apellido">  
+ <input class="controls" type="text" required maxlength="9" name="Telefono" id="Telefono" placeholder="Telefono">  
  <input class="controls" type="email" required maxlength="50" name="Correo electrònico" id="Correo electrònico" placeholder="Correo Electrònico">         
- <input class="controls" type="text" required maxlength="50" name="Asunto" id="Asunto" placeholder="Asunto">          
- <textarea class="controls" name="texarea" id="texarea" required maxlength="100" cols="57" rows="10"placeholder="Mensaje"></textarea><br>
- <button class="botons">Enviar</button>
-</div><br>
+ <input class="controls" type="text" required maxlength="50" name="Veiculo que desea cotizar" id="Veiculo que desea cotizar" placeholder="Veiculo que desea cotizar">          
+ <textarea class="controls" name="texarea" id="texarea" required maxlength="100" cols="57" rows="10"placeholder="Detalles del veiculo"></textarea><br>
+ <button class="botons" >Verificar</button>  
+ <button class="botons" type="button" value="Enviar" onClick="enviar()">Enviar</button>
+</div>
+ 
+ <script>
+ 
+ function enviar(){
+   window.alert('En breve le llegara un mail de confirmacion');
+   window.alert('Gracias por elegirnos');
+   }
+ 
+ </script>  
+
 
 <footer class="footer">
     <h2 class="a2">Contacto</h2>

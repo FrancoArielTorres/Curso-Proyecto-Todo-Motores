@@ -25,6 +25,10 @@
   position: fixed;
   left: 1850px;
 }
+.e{
+  text-align: center;
+  color: rgb(233, 241, 241);
+}
 .a {
   font-family: "rockwell";
   font-size: 130px;
